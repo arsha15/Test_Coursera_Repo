@@ -1,0 +1,8 @@
+name: Greetings
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: arsha15-step-01
+        run: echo "Welcome to IKEA"
