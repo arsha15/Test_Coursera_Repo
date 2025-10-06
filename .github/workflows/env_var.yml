@@ -1,10 +1,14 @@
-name: list_of_all_github_default_variables
+name: Show Default Environment Variables
+
 on:
-    worklfow_dispatch:
+  push:
 
 jobs:
-    ubuntu_env_variables:
+  show-env-vars:
     runs-on: ubuntu-latest
     steps:
-      -run: env
-    
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print all default environment variables
+        run: printenv
