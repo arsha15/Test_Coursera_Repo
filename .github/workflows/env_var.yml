@@ -7,16 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -run: env
-      
-    macos_env_variables:
-    runs-on: macos-latest
-    steps:
-      -run: env
-
-    windows_env_variables:
-    runs-on: windows-latest
-    steps:
-      -run: env
-      
-    
     
