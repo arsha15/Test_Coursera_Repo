@@ -1,0 +1,22 @@
+name: list_of_all_github_default_variables
+on:
+    worklfow_dispatch:
+
+jobs:
+    ubuntu_env_variables:
+    runs-on: ubuntu-latest
+    steps:
+      -run: env
+      
+    macos_env_variables:
+    runs-on: macos-latest
+    steps:
+      -run: env
+
+    windows_env_variables:
+    runs-on: windows-latest
+    steps:
+      -run: env
+      
+    
+    
